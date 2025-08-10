@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Game Application</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Quiz Game</h1>
+      <p class="subtitle">Answer questions and get your score at the end.</p>
+    </header>
+
+    <main id="quiz-area" class="card">
+      <div id="question-box">
+        <!-- Question and answers rendered here -->
+      </div>
+
+      <div id="controls" class="controls">
+        <button id="prevBtn" class="btn secondary">Previous</button>
+        <button id="nextBtn" class="btn primary">Next</button>
+        <button id="submitBtn" class="btn success">Submit</button>
+      </div>
+    </main>
+
+    <aside id="result" class="card hidden">
+      <h2>Results</h2>
+      <p id="scoreText"></p>
+      <button id="restartBtn" class="btn">Play Again</button>
+    </aside>
+
+    <footer>
+      <small>Simple Quiz Game • Supports Single &amp; Multi-select</small>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

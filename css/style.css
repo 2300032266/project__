@@ -1,0 +1,58 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg,#11121a,#17171f);
+  color:#e6eef8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  padding:20px;
+}
+
+.app{max-width:900px; width:100%}
+header{ text-align:center; margin-bottom:18px }
+h1{ margin:4px 0; font-size:36px; letter-spacing:1px }
+.subtitle{ margin:0; color:#a9b7cc }
+
+.card{
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding:18px;
+  border-radius:10px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  margin-bottom:12px;
+}
+
+#question-box{ min-height:180px; }
+
+.question{ font-size:20px; margin-bottom:12px }
+.options{ list-style:none; padding:0; margin:0; display:grid; gap:8px }
+.option{ display:flex; align-items:center; gap:12px; padding:10px; border-radius:8px; cursor:pointer;
+  background: rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.02);
+  transition:all .15s ease;
+}
+.option:hover{ transform:translateY(-2px); background: rgba(255,255,255,0.04) }
+
+.option input[type="radio"],
+.option input[type="checkbox"]{ transform:scale(1.1) }
+
+.option.selected{ outline: 2px solid rgba(80, 200, 120, 0.25) }
+
+.controls{ display:flex; gap:8px; justify-content:flex-end; margin-top:14px }
+
+.btn{
+  padding:8px 14px; border-radius:8px; border:0; cursor:pointer; background:#2b3340; color:#e6eef8;
+}
+.btn.primary{ background:#4b6ef6 }
+.btn.secondary{ background:#6c7284 }
+.btn.success{ background:#2bb673 }
+
+.hidden{ display:none }
+
+footer{ text-align:center; margin-top:12px; color:#9aa7bd }
+@media (max-width:600px){
+  h1{ font-size:24px }
+  .controls{ flex-direction:column; align-items:stretch }
+}
